@@ -1,0 +1,7 @@
+<form>
+<label for="name">Name:</label>
+<input type="text" name="name" ng-model="item.name">
+<label for="category">Category:</label> 
+<select name="category" ng-model="item.category_id" ng-options="category.id as category.name for category in categories"></select>
+<button ng-click="save(item)">Save item</button>
+</form> 

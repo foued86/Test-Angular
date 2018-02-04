@@ -1,0 +1,12 @@
+<h2>Welcome to Collectify</h2>
+<div>
+   <form ng-hide="session.user">
+       <label>Email:</label> <input ng-model="user.email" type="email" name="email">
+       <label>Password:</label> <input ng-model="user.password" type="password" name="password">
+
+       <button ng-click="auth(user)">Login</button>
+    </form>
+</div>
+
+<span><a href="#/user/create">Create new user</a></span>
+<br><hr><br>
